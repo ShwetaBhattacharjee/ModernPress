@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" >
@@ -22,13 +23,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Bags</a>
+                <a class="nav-link" href="#bags">Bags</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Poster</a>
+                <a class="nav-link" href="#banner">Banner & Poster</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Banner</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
              
             </ul>
@@ -43,14 +44,14 @@
       <section class="mt-5">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div style="background-color: #FCEAE8" class="carousel-item active border-info rounded-border p-5">
+            <div  class="carousel-item active border-info rounded-border p-5 bg">
               <div class="row">
                 <div class="col-lg-7 d-flex align-items-center ">
                   <div>
                   <h2>Shopping Bag Making</h2>
                   <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
                   <h1 class="price">$420</h1>
-                  <div class="btn btn-warning">Buy Now</div>
+                  <div class="btn btn-modern">Buy Now</div>
                 </div></div>
                 <div class="col-md-5">
                   <img src="images/bags/bag2.png" class="d-block w-100" style="height:250px">
@@ -62,7 +63,7 @@
                       <h2>Poster Making</h2>
                       <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
                       <h1 class="price">$420</h1>
-                      <div class="btn btn-warning">Buy Now</div>
+                      <div class="btn btn-modern">Buy Now</div>
                     </div></div>
                     <div class="col-md-5">
                       <img src="images/bags/1.png" class="d-block w-50"  style="height:250px" >
@@ -74,7 +75,7 @@
                           <h2>Banner Making</h2>
                           <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
                           <h1 class="price">$420</h1>
-                          <div class="btn btn-warning">Buy Now</div>
+                          <div class="btn btn-modern">Buy Now</div>
                         </div></div>
                         <div class="col-md-5">
                           <img src="images/bags/2.png" class="d-block w-50"  style="height:250px">
@@ -96,26 +97,26 @@
     <!--cata-->
     <section>
       <div class="container overflow-hidden text-center my-5">
-        <div class="row gy-5">
+        <div class="row g-5 cata">
           <!--single-->
           <div class="col-lg-4 col-md-6 col-sm-12 ">
             <div class="p-3 border bg-warning d-flex align-items-center justify-content-around rounded-3">
               <h1 class="text-white">Bag</h1>
-              <img src="images/bags/bag-1.png" class="w-50 " style="height:150px">
+              <img src="images/bags/bag-1.png" class="w-50 " >
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12 ">
             <div class="p-3 border bg-success d-flex align-items-center justify-content-around rounded-3">
               <h1 class="text-white">Banner</h1>
-              <img src="images/bags/ban-1.png" class="w-50 " style="height:150px">
+              <img src="images/bags/ban-1.png" class="w-50 " >
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 col-sm-12 ">
             <div class="p-3 border bg-info d-flex align-items-center justify-content-around rounded-3">
               <h1 class="text-white">Poster</h1>
-              <img src="images/bags/poster.png" class="w-50 " style="height:150px">
+              <img src="images/bags/poster.png" class="w-50 " >
             </div>
           </div>
          
@@ -124,48 +125,107 @@
       </div>
     </section>
     <!--shoes-->
-    <section class="container my-5">
+    <section class="container my-5" id="bags">
       <h2 >Bags</h2>
 
-      <div class="row row-cols-3 row-cols-md-2 row-cols-lg-3 g-4 ">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
         <div class="col">
-          <div class="card h-75 border border-0 shadow-lg">
+          <div class="card h-100 border border-0 shadow-lg">
             <img src="images/bags/cbag1.png" class="card-img-top h-50 w-100 align-items-center" alt="...">
             <div class="card-body">
               <h5 class="card-title">100 Taka</h5>
               <p class="card-text">Shopping bags are medium-sized bags, typically around 10–20 litres (2.5–5 gallons) in volume (though much larger versions exist, especially for non-grocery shopping), that are used by shoppers to carry home their purchases.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-modern">Buy Now</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-75 border border-0 shadow-lg">
+          <div class="card h-100 border border-0 shadow-lg">
             <img src="images/bags/cbag2.png" class="card-img-top h-50 w-100 align-items-center" alt="...">
             <div class="card-body">
               <h5 class="card-title">200 Taka</h5>
               <p class="card-text">Shopping bags are medium-sized bags, typically around 10–20 litres (2.5–5 gallons) in volume (though much larger versions exist, especially for non-grocery shopping), that are used by shoppers to carry home their purchases.</p> 
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-modern">Buy Now</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-75 border border-0 shadow-lg">
+          <div class="card h-100 border border-0 shadow-lg">
             <img src="images/bags/cbag3.png" class="card-img-top h-50 w-100 align-items-center" alt="...">
             <div class="card-body">
               <h5 class="card-title">150 Taka</h5>
               <p class="card-text">Shopping bags are medium-sized bags, typically around 10–20 litres (2.5–5 gallons) in volume (though much larger versions exist, especially for non-grocery shopping), that are used by shoppers to carry home their purchases.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-modern">Buy Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </main>
+    <!-- Backpack -->
+      <section class="container my-5" id="banner">
+      <h2 >Banner & Poster</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
+        <div class="col">
+          <div class="card h-100 border border-0 shadow-lg">
+            <img src="images/bags/banner1.png" class="card-img-top h-50 w-100 align-items-center" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">100 Taka</h5>
+              <p class="card-text">A banner can be a flag or another piece of cloth bearing a symbol, logo, slogan or another message. A flag whose design is the same as the shield in a coat of arms (but usually in a square or rectangular shape) is called a banner of arms.</p>        </div>
+            <div class="m-3">
+              <button class="btn btn-modern">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border border-0 shadow-lg">
+            <img src="images/bags/banner2.png" class="card-img-top h-50 w-100 align-items-center" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">200 Taka</h5>
+              <p class="card-text">A banner can be a flag or another piece of cloth bearing a symbol, logo, slogan or another message. A flag whose design is the same as the shield in a coat of arms (but usually in a square or rectangular shape) is called a banner of arms.</p> 
+            </div>
+            <div class="m-3">
+              <button class="btn btn-modern">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border border-0 shadow-lg">
+            <img src="images/bags/banner3.png" class="card-img-top h-50 w-100 align-items-center" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">150 Taka</h5>
+              <p class="card-text">A banner can be a flag or another piece of cloth bearing a symbol, logo, slogan or another message. A flag whose design is the same as the shield in a coat of arms (but usually in a square or rectangular shape) is called a banner of arms.</p>
+            </div>
+            <div class="m-3">
+              <button class="btn btn-modern">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe -->
+    <section class="container d-flex rounded-3 align-items-center justify-content-center bg" style="height: 350px" >
+      <div>
+    <h2>Let's stay in touch</h2>
+    <p>Get update on sale</p>
+    <form>
+      <div class="mb-1">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+      </div>
+     
+      <button type="submit" class="btn btn-modern">Submit</button>
+    </form>
+  </div>
+  </section>
+    </main>
+    <footer class="mt-5 text-center" id="subscribe"><p><small>@ModernPress 2022</small></p></footer>
  </body>
 </html>
